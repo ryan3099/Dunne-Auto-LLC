@@ -1,67 +1,85 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dunne Auto LLC</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
-    }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
-    }
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
-    }
+    body {font-family: 'Inter', sans-serif; margin:0; padding:0; background:#111; color:#eee;}
+    header {background:#333; color:#fff; padding:20px; text-align:center;}
+    header h1 {margin:0; color:#ccc;}
+    header h2 {margin:5px 0 0; color:#888; font-weight:400;}
+    nav {background:#000; padding:10px; text-align:center;}
+    nav a {color:#ccc; margin:0 15px; text-decoration:none; font-weight:600;}
+    nav a:hover {color:#fff;}
+    .hero {background:#222; color:#fff; padding:60px 20px; text-align:center; animation: fadeIn 2s ease-in;}
+    .hero h1 {font-size:2.5em; margin-bottom:20px;}
+    .hero p {font-size:1.2em; margin-bottom:30px;}
+    .hero button {padding:12px 25px; background:#444; color:#fff; border:none; border-radius:6px; cursor:pointer;}
+    .hero button:hover {background:#666;}
+    @keyframes fadeIn {from {opacity:0;} to {opacity:1;}}
+    .services, .gallery, .about, .contact {padding:60px 20px; text-align:center;}
+    .services h2, .gallery h2, .about h2, .contact h2 {color:#ccc; margin-bottom:40px;}
+    .service-list {display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:20px;}
+    .service-item {background:#1c1c1c; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.5);}
+    .service-item h3 {color:#fff; margin-bottom:10px;}
+    .gallery-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:20px;}
+    .gallery-grid img {width:100%; border-radius:12px; height:200px; object-fit:cover; transition:transform 0.3s;}
+    .gallery-grid img:hover {transform:scale(1.05);}
+    .about p {max-width:800px; margin:auto; line-height:1.6;}
+    .contact p {margin:10px 0;}
+    footer {background:#000; color:#777; text-align:center; padding:20px; margin-top:40px;}
+    iframe {border:0; width:100%; height:300px; border-radius:12px; margin-top:20px;}
   </style>
 </head>
 <body>
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <h1>Dunne Auto LLC</h1>
+    <h2>Auto Cleaning & Detailing Services</h2>
   </header>
-
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
-
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <h1>Professional Auto Cleaning</h1>
+    <p>Premium auto cleaning and detailing services in Simi Valley, CA.</p>
+    <button onclick="window.location.href='tel:+14239104585'">Call Now</button>
+  </section>
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-item"><h3>Exterior Wash</h3><p>Deep cleaning for a shiny car exterior.</p></div>
+      <div class="service-item"><h3>Interior Detailing</h3><p>Vacuum, polish, and refresh your car interior.</p></div>
+      <div class="service-item"><h3>Wax & Polish</h3><p>Protective waxing with a mirror finish.</p></div>
+      <div class="service-item"><h3>Engine Bay Cleaning</h3><p>Thorough cleaning for performance and aesthetics.</p></div>
     </div>
   </section>
-
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://www.thesun.co.uk/wp-content/uploads/2023/08/newspress-collage-23471922-1691963171748.jpg?1691966784&strip=all&quality=100&w=1920&h=1080&crop=1" alt="Auto cleaning">
+      <img src="https://m.media-amazon.com/images/I/811DE6vAUrL.jpg" alt="Car wash">
+      <img src="https://img.joomcdn.net/444d496026a0d475c63600d81bd68cf4ad930d84_original.jpeg" alt="Detailing">
+      <img src="https://www.festo.com/media/cms/central/media/editorial/img/automation/Core-Range_Alfacar_AdobeStock_201644526_fix1920x880.jpg" alt="Workshop">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/16c36152-3682-44ba-9203-af5dbbcaf602/dhi1tvi-fa3d8165-bf76-488c-afee-45b48f180987.jpg" alt="Auto detailing">
+    </div>
+  </section>
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Dunne Auto LLC provides professional auto cleaning and detailing services in Simi Valley, CA. With advanced tools and eco-friendly products, we ensure every car looks brand new. Your satisfaction is our priority.</p>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> Downing St, Simi Valley, CA 93065</p>
+    <p><strong>Phone:</strong> <a href="tel:+14239104585">+1 423 910 4585</a></p>
+    <p><strong>Email:</strong> <a href="mailto:support@dunneauto.shop">support@dunneauto.shop</a></p>
+    <iframe src="https://www.google.com/maps/embed/v1/place?q=Simi+Valley,+CA+93065&key=YOUR_GOOGLE_MAPS_API_KEY"></iframe>
+  </section>
   <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
+    <p>&copy; 2025 Dunne Auto LLC. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
