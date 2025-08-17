@@ -5,81 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dunne Auto LLC</title>
   <style>
-    body {font-family: 'Inter', sans-serif; margin:0; padding:0; background:#0d0d0d; color:#e6e6e6;}
-    header {background:#001f3f; color:#fff; padding:20px; text-align:center;}
-    header h1 {margin:0; color:#ffffff;}
-    header h2 {margin:5px 0 0; color:#a3c4f3; font-weight:400;}
-    nav {background:#000; padding:10px; text-align:center;}
-    nav a {color:#a3c4f3; margin:0 15px; text-decoration:none; font-weight:600;}
-    nav a:hover {color:#fff;}
-    .hero {background:url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/16c36152-3682-44ba-9203-af5dbbcaf602/dhi1tvi-fa3d8165-bf76-488c-afee-45b48f180987.jpg') center/cover no-repeat; color:#fff; padding:80px 20px; text-align:center; animation: fadeIn 2s ease-in;}
-    .hero h1 {font-size:2.8em; margin-bottom:20px; text-shadow:0 0 10px #000;}
-    .hero p {font-size:1.3em; margin-bottom:30px; text-shadow:0 0 5px #000;}
-    .hero button {padding:12px 25px; background:#001f3f; color:#fff; border:none; border-radius:6px; cursor:pointer;}
-    .hero button:hover {background:#004080;}
-    @keyframes fadeIn {from {opacity:0;} to {opacity:1;}}
-    .services, .gallery, .about, .contact {padding:60px 20px; text-align:center;}
-    .services h2, .gallery h2, .about h2, .contact h2 {color:#a3c4f3; margin-bottom:40px;}
-    .service-list {display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:20px;}
-    .service-item {background:#1a1a1a; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.6);}
-    .service-item h3 {color:#fff; margin-bottom:10px;}
-    .gallery-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:20px;}
-    .gallery-grid img {width:100%; border-radius:12px; height:200px; object-fit:cover; transition:transform 0.3s;}
-    .gallery-grid img:hover {transform:scale(1.05);}
-    .about p {max-width:800px; margin:auto; line-height:1.6;}
-    .contact p {margin:10px 0;}
-    footer {background:#000; color:#777; text-align:center; padding:20px; margin-top:40px;}
-    iframe {border:0; width:100%; height:300px; border-radius:12px; margin-top:20px;}
+    body {font-family: 'Inter', sans-serif; margin:0; padding:0; background:#0a0a0a; color:#fff;}
+    header {background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://t3.ftcdn.net/jpg/03/32/21/92/360_F_332219292_n773H1t6jiU04Xo6jQ40gfN78kQJuhiX.jpg') center/cover no-repeat; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;}
+    header h1 {font-size:3.5rem; color:#1e90ff; text-shadow:2px 2px 6px rgba(0,0,0,0.8);}
+    header p {font-size:1.3rem; margin-top:15px; max-width:700px;}
+    header a {margin-top:20px; background:#1e90ff; color:#fff; padding:12px 28px; text-decoration:none; font-weight:bold; border-radius:8px; transition:0.3s;}
+    header a:hover {background:#0056b3;}
+    section {padding:60px 20px; text-align:center;}
+    .gallery img {width:300px; margin:10px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.6);}
+    .contact {background:#111; padding:60px 20px;}
+    .map {margin-top:30px; width:100%; height:400px;}
   </style>
 </head>
 <body>
   <header>
     <h1>Dunne Auto LLC</h1>
-    <h2>Professional Auto Cleaning & Detailing</h2>
+    <p>Professional Auto Cleaning – Grey & Black Style with Deep Blue Touch</p>
+    <a href="tel:+14239104585">Call Now: +1 423 910 4585</a>
   </header>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <section class="hero">
-    <h1>Professional Auto Cleaning</h1>
-    <p>Keep your car spotless and shining with Dunne Auto LLC.</p>
-    <button onclick="window.location.href='tel:+14239104585'">Call Now</button>
-  </section>
-  <section id="services" class="services">
+
+  <section>
     <h2>Our Services</h2>
-    <div class="service-list">
-      <div class="service-item"><h3>Exterior Wash</h3><p>Shine and protect your car exterior.</p></div>
-      <div class="service-item"><h3>Interior Detailing</h3><p>Thorough vacuuming and polishing inside.</p></div>
-      <div class="service-item"><h3>Wax & Polish</h3><p>Glossy finish with protective wax coating.</p></div>
-      <div class="service-item"><h3>Engine Cleaning</h3><p>Engine bay deep cleaning for better performance.</p></div>
-    </div>
+    <p>We provide high-quality auto cleaning and detailing services including exterior wash, interior detailing, waxing, and engine cleaning.</p>
   </section>
-  <section id="gallery" class="gallery">
+
+  <section class="gallery">
     <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="https://www.thesun.co.uk/wp-content/uploads/2023/08/newspress-collage-23471922-1691963171748.jpg?1691966784&strip=all&quality=100&w=1920&h=1080&crop=1" alt="Auto cleaning">
-      <img src="https://m.media-amazon.com/images/I/811DE6vAUrL.jpg" alt="Car wash">
-      <img src="https://img.joomcdn.net/444d496026a0d475c63600d81bd68cf4ad930d84_original.jpeg" alt="Detailing">
-      <img src="https://www.festo.com/media/cms/central/media/editorial/img/automation/Core-Range_Alfacar_AdobeStock_201644526_fix1920x880.jpg" alt="Workshop">
-      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/16c36152-3682-44ba-9203-af5dbbcaf602/dhi1tvi-fa3d8165-bf76-488c-afee-45b48f180987.jpg" alt="Auto detailing">
+    <img src="https://www.thesun.co.uk/wp-content/uploads/2023/08/newspress-collage-23471922-1691963171748.jpg?1691966784&strip=all&quality=100&w=1920&h=1080&crop=1" alt="Car Wash">
+    <img src="https://m.media-amazon.com/images/I/811DE6vAUrL.jpg" alt="Car Cleaning">
+    <img src="https://img.joomcdn.net/444d496026a0d475c63600d81bd68cf4ad930d84_original.jpeg" alt="Interior Cleaning">
+    <img src="https://www.festo.com/media/cms/central/media/editorial/img/automation/Core-Range_Alfacar_AdobeStock_201644526_fix1920x880.jpg" alt="Auto Tech">
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/16c36152-3682-44ba-9203-af5dbbcaf602/dhi1tvi-fa3d8165-bf76-488c-afee-45b48f180987.jpg/v1/fill/w_1095,h_730,q_70,strp/auto_detailing_manhasset___automatic_wash_near_me_by_racetrackcarwash_dhi1tvi-pre.jpg" alt="Auto Detailing">
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@dunneauto.shop</p>
+    <p>Phone: +1 423 910 4585</p>
+    <p>Address: Downing St, Simi Valley, CA 93065</p>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Downing+St,+Simi+Valley,+CA+93065" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </section>
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>Dunne Auto LLC specializes in professional car cleaning and detailing in Simi Valley, CA. We use advanced cleaning technology and eco-friendly products to ensure the best results for your vehicle.</p>
-  </section>
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Address:</strong> Downing St, Simi Valley, CA 93065</p>
-    <p><strong>Phone:</strong> <a href="tel:+14239104585">+1 423 910 4585</a></p>
-    <p><strong>Email:</strong> <a href="mailto:support@dunneauto.shop">support@dunneauto.shop</a></p>
-    <iframe src="https://www.google.com/maps/embed/v1/place?q=Simi+Valley,+CA+93065&key=YOUR_GOOGLE_MAPS_API_KEY"></iframe>
-  </section>
-  <footer>
-    <p>&copy; 2025 Dunne Auto LLC. All Rights Reserved.</p>
-  </footer>
 </body>
 </html>
